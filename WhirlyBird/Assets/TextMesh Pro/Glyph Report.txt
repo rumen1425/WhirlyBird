@@ -1,0 +1,12 @@
+Font: ArcadeClassic  Style: Regular
+Point Size: 147   SP/PD Ratio: 3.4%
+
+Characters included: 36/36
+Missing characters: 0
+Excluded characters: 0
+
+Characters missing from font file:
+----------------------------------------
+
+Characters excluded from packing:
+----------------------------------------
