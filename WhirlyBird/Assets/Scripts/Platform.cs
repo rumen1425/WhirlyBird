@@ -12,7 +12,7 @@ public class Platform : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.relativeVelocity.y <= 0f)
         {
@@ -22,6 +22,7 @@ public class Platform : MonoBehaviour
             {
                 Vector2 velocity = rb.velocity;
                 velocity.y = jumpForce;
+                velocity.x = rb.velocity.x;
                 rb.velocity = velocity;
             }
         }
