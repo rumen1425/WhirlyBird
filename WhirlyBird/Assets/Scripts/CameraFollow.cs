@@ -2,10 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraFollow : MonoBehaviour
 {
+    public Text scoreText;
     public Transform target;
+
+    private void Update()
+    {
+        scoreText.text = ((int)(transform.position.y * 10)).ToString();
+    }
 
     private void LateUpdate()
     {
