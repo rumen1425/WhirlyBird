@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    protected Rigidbody2D rb;
+    public Rigidbody2D rb;
     [SerializeField] private float jumpForce = 10f;
 
     private void Awake()
@@ -28,7 +28,6 @@ public class Platform : MonoBehaviour
         }
 
     }
-    
-
+   
 }
 
