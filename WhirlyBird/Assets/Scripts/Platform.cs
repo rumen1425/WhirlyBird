@@ -5,7 +5,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     protected Rigidbody2D rb;
-    public float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 10f;
 
     private void Awake()
     {
